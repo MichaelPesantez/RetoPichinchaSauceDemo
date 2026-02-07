@@ -29,7 +29,7 @@ public class CompletePurchase implements Task {
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
-                WaitUntil.the(SauceCartPage.CHECKOUT_BUTTON, isVisible()).forNoMoreThan(10).seconds(),
+                WaitUntil.the(SauceCartPage.CHECKOUT_BUTTON, isVisible()).forNoMoreThan(5).seconds(),
                 Click.on(SauceCartPage.CHECKOUT_BUTTON),
                 Enter.theValue(firstName).into(SauceCheckoutPage.FIRST_NAME),
                 Enter.theValue(lastName).into(SauceCheckoutPage.LAST_NAME),

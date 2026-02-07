@@ -18,7 +18,7 @@ public class ViewCart implements Task {
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
-                WaitUntil.the(SauceCartPage.CART_ICON,isVisible()).forNoMoreThan(10).seconds(),
+                WaitUntil.the(SauceCartPage.CART_ICON,isVisible()).forNoMoreThan(5).seconds(),
                 Click.on(SauceCartPage.CART_ICON)
         );
     }

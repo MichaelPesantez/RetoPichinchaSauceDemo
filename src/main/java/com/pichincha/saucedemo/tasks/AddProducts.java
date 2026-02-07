@@ -19,10 +19,10 @@ public class AddProducts implements Task {
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
 
-                WaitUntil.the(SauceInventoryPage.ADD_TO_CART_BACKPACK, isVisible()).forNoMoreThan(20).seconds(),
+                WaitUntil.the(SauceInventoryPage.ADD_TO_CART_BACKPACK, isVisible()).forNoMoreThan(5).seconds(),
                 Click.on(SauceInventoryPage.ADD_TO_CART_BACKPACK),
 
-                WaitUntil.the(SauceInventoryPage.ADD_TO_CART_BIKE_LIGHT, isVisible()).forNoMoreThan(20).seconds(),
+                WaitUntil.the(SauceInventoryPage.ADD_TO_CART_BIKE_LIGHT, isVisible()).forNoMoreThan(5).seconds(),
                 Click.on(SauceInventoryPage.ADD_TO_CART_BIKE_LIGHT)
 
         );
