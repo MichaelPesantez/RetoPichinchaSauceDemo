@@ -1,0 +1,35 @@
+EVALUACIÓN DE LAS PRUEBAS REALIZADAS
+
+1. Resumen Ejecutivo
+
+Se llevó a cabo un ciclo de pruebas automatizadas bajo el enfoque End-to-End (E2E) sobre la plataforma de comercio electrónico SauceDemo. El objetivo principal fue validar la integridad del flujo crítico de negocio, desde el acceso del usuario hasta la confirmación de la transacción, garantizando que los componentes del sistema interactúen correctamente.
+
+2. Alcance de la Validación
+
+El proceso de automatización cubrió satisfactoriamente las siguientes funcionalidades clave:
+
+Gestión de Accesos: Validación del proceso de autenticación con credenciales autorizadas.
+
+Gestión de Inventario: Selección y adición efectiva de múltiples artículos al carrito de compras.
+
+Flujo de Transacción: Revisión del carrito, ingreso de datos de facturación/envío y procesamiento de la orden.
+
+Confirmación de Operación: Verificación del estado final de éxito mediante el mensaje: “Thank you for your order”.
+
+3. Resultados y Hallazgos Detallados
+Tras la ejecución de los scripts de prueba, se exponen las siguientes conclusiones técnicas:
+
+Efectividad del Software: El 100% de los casos de prueba se ejecutaron con éxito, sin registrar excepciones, fallos de carga o errores de respuesta por parte del servidor.
+
+Observación de Seguridad/Validación: Se identificó que los campos de entrada de texto carecen de validaciones estrictas (máscaras de entrada o restricciones de tipo de carácter). Si bien esto no impidió la compra, representa una oportunidad de mejora en la integridad de los datos.
+
+Disponibilidad y Rendimiento: No se detectaron intermitencias, latencias inusuales ni denegaciones de servicio, confirmando la estabilidad del entorno bajo las condiciones de prueba actuales.
+
+4. Recomendaciones Estratégicas
+Dada la naturaleza crítica y repetitiva de este flujo, se recomienda firmemente la adopción permanente de estas pruebas automatizadas. La implementación de este marco de trabajo permite:
+
+Optimización de Recursos: Liberar al equipo de control de calidad de tareas manuales monótonas, permitiéndoles enfocarse en pruebas de exploración y usabilidad.
+
+Escalabilidad: Ejecutar ciclos de pruebas masivos y recurrentes con un costo marginal mínimo.
+
+Reducción del Time-to-Market: Detectar regresiones de manera inmediata ante cualquier cambio en el código fuente, asegurando una entrega continua de alta confiabilidad.

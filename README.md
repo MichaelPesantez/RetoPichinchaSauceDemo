@@ -46,5 +46,8 @@
 
 - Correr el proyecto desde la clase MainRunner ubicada dentro de la ruta /src/test/java/com/pichincha/saucedemo/runners
 - Ejecutar en la terminal el comando `gradle clean test`
-> La automatizacion genera reportes automáticamente, estos reportes se los puede visualizar ejecutando el index.html que se crea después de correr el programa dentro de la ruta: `/target/site/serenity/index.html`
+> La automatizacion genera reportes automáticamente, los reportes generados por Serenity BDD se los puede visualizar ejecutando el index.html que se crea después de correr el programa dentro de la ruta: `/target/site/serenity/index.html`
 
+
+# Nota
+#### Todos los reportes generados en Cucumber se encuentran denrtro de la ruta `/target/reports/`

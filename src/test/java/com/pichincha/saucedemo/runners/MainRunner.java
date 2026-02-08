@@ -9,6 +9,6 @@ import org.junit.platform.suite.api.Suite;
 @IncludeEngines("cucumber")
 @SelectClasspathResource("features")
 @ConfigurationParameter(key = "cucumber.glue", value = "com.pichincha.saucedemo.stepdefinitions")
-@ConfigurationParameter(key = "cucumber.plugin", value = "io.cucumber.core.plugin.SerenityReporterParallel,pretty")
+@ConfigurationParameter(key = "cucumber.plugin", value = "pretty, com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:")
 public class MainRunner {
 }
